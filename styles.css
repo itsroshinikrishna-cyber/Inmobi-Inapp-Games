@@ -585,14 +585,13 @@ section { position: relative; }
 }
 .format__stats {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: end;
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   font-family: var(--font-mono);
   border-top: 1px solid rgba(255, 247, 236, 0.2);
   padding-top: 12px;
 }
-.format__stats > div { text-align: left; min-width: 0; }
+.format__stats > div { text-align: left; }
 .format__stats .label { display: block; font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cyan); margin-bottom: 4px; }
 .format__stats .value { font-family: var(--font-display); font-weight: 700; font-size: 16px; letter-spacing: -0.02em; color: var(--paper); }
 .format__stats .value.na { color: rgba(255, 247, 236, 0.4); font-weight: 400; }
@@ -663,7 +662,7 @@ section { position: relative; }
   line-height: 0.9;
   letter-spacing: -0.08em;
 }
-.statcell__num .unit { font-size: 48px; opacity: 0.7; font-weight: 500; letter-spacing: -0.04em; margin-left: 0.18em; display: inline-block; }
+.statcell__num .unit { font-size: 48px; opacity: 0.7; font-weight: 500; letter-spacing: -0.04em; }
 .statcell__label {
   font-family: var(--font-mono);
   font-weight: 400;
